@@ -19,9 +19,11 @@ figure, blockquote, dl, dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul,
+ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Set core body defaults */
@@ -70,4 +72,38 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+li{
+  display: inline;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+canvas{
+  width: 100%;
+  height: 100%;
+}
+
+section{
+  margin-bottom: 40px;
+}
+
+section.promo{
+  display: flex;
+  justify-content: space-around;
+}
+
+.promo-video video{
+  width: 600px;
+}
+
+section.services{
+  display: flex;
+  justify-content: space-evenly;
 }
